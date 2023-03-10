@@ -14,6 +14,8 @@ root.render(
                 <Route path="/*" element={<App/>}/>
             </Routes>
         </BrowserRouter> */}
-        <div></div>
+        <div>
+            <h1>Troubleshooting Routing</h1>
+        </div>
     </NextUIProvider>
 )
