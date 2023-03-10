@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/cesaralmendarez/static/css/main.047ace6b.css",
+    "main.js": "/cesaralmendarez/static/js/main.6a86b86b.js",
+    "static/media/DeepASL.gif": "/cesaralmendarez/static/media/DeepASL.6e6abd7f2a214357537f.gif",
+    "static/media/NewsNova.png": "/cesaralmendarez/static/media/NewsNova.e769b7dfeaa24e01a3dc.png",
+    "static/media/RewardLyst.gif": "/cesaralmendarez/static/media/RewardLyst.a00a4784c8de1190b960.gif",
+    "static/media/DoneDidIt.png": "/cesaralmendarez/static/media/DoneDidIt.90663f110e12ca545c24.png",
+    "static/media/Me.png": "/cesaralmendarez/static/media/Me.ebe81bb890d3bfe535e3.png",
+    "static/media/Resume.pdf": "/cesaralmendarez/static/media/Resume.cc262385c7315da9f84d.pdf",
+    "index.html": "/cesaralmendarez/index.html",
+    "main.047ace6b.css.map": "/cesaralmendarez/static/css/main.047ace6b.css.map",
+    "main.6a86b86b.js.map": "/cesaralmendarez/static/js/main.6a86b86b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.047ace6b.css",
+    "static/js/main.6a86b86b.js"
+  ]
+}
