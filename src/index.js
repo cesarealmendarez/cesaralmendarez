@@ -9,10 +9,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(
     <NextUIProvider>
-        <BrowserRouter>
+        {/* <BrowserRouter>
             <Routes>
                 <Route path="/*" element={<App/>}/>
             </Routes>
-        </BrowserRouter>
+        </BrowserRouter> */}
+        <div></div>
     </NextUIProvider>
 )
