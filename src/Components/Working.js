@@ -42,14 +42,16 @@ export default function Working() {
             transition={{ duration: 0.35 }}
             exit={{ y: 10, opacity: 0 }}        
         >
-            <div className="space-y-6">
+            <div className="space-y-6 w-full">
                 <h1 className="text-6xl m-0 p-0">🧑‍🔬</h1>
-                <div className="space-y-2">
+                <div className="space-y-2 w-full">
                     <div className="w-full flex flex-row items-center justify-center lg:space-x-4">
                         <h1 className="text-center text-3xl text-white font-extrabold m-0 p-0 mr-2 lg:mr-0">I'm Currently Working On</h1>
                         <hr className="flex-grow h-[2px] bg-[#0594E3]"/>
                     </div>     
-                    <p className="text-left text-lg text-[#A3A9C3] font-normal m-0 p-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p className="text-left text-lg text-[#A3A9C3] font-normal m-0 p-0">
+                        Quick summary of any side projects or businesses im building at the moment!
+                    </p>
                 </div>
             </div>  
 

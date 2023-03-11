@@ -6,20 +6,32 @@ export default function Experience() {
         {
             experienceID: 0,
             experienceBusiness: "CSULA EPIC", 
+            experienceCommitmentStatus: "Part-Time",
             experienceRole: "Data Collection and Administration Assistant",
             experienceStartDate: "Jan 2022",
             experienceEndDate: "Present",
-            experienceTakeaways: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."],
-            experiencePrimaryColor: "text-yellow-500"
+            experienceTakeaways: [
+                "Publishing daily updates to the Eagle Connect front-end to reflect up-to-date information on local events, volunteer opportunities, etc.", 
+                "Developed a routine reporting system that extracts relevant, actionable data points on volunteer activity to further assist in the faciliation of community engagement between CSULA students and community partners.", 
+                "Appointed first-level technical support to troublshoot and resolve technical issues Eagle Connect users might encounter."
+            ],
+            experiencePrimaryColor: "text-yellow-500",
+            experienceLink: "https://www.volunteereasy.com/Site/eagleconnect#/"
         },
         {
             experienceID: 1,
             experienceBusiness: "PretzelMaker",
+            experienceCommitmentStatus: "Full-Time",
             experienceRole: "Roller",
             experienceStartDate: "Apr 2021",
             experienceEndDate: "Aug 2021",
-            experienceTakeaways: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."],
-            experiencePrimaryColor: "text-red-500"
+            experienceTakeaways: [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", 
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            ],
+            experiencePrimaryColor: "text-yellow-500",
+            experienceLink: ""
         },
     ]; 
 
@@ -33,14 +45,16 @@ export default function Experience() {
             transition={{ duration: 0.35 }}
             exit={{ y: 10, opacity: 0 }}        
         >
-            <div className="space-y-6">
+            <div className="space-y-6 w-full">
                 <h1 className="text-6xl m-0 p-0">🧳</h1>
-                <div className="space-y-2">
+                <div className="space-y-2 w-full">
                     <div className="w-full flex flex-row items-center justify-center lg:space-x-4">
                         <h1 className="text-center text-3xl text-white font-extrabold m-0 p-0 mr-2 lg:mr-0">Paid Experience</h1>
                         <hr className="flex-grow h-[2px] bg-[#0594E3]"/>
                     </div>     
-                    <p className="text-left text-lg text-[#A3A9C3] font-normal m-0 p-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p className="text-left text-lg text-[#A3A9C3] font-normal m-0 p-0">
+                        A list of places I have work
+                    </p>
                 </div>
             </div>  
 
@@ -82,11 +96,12 @@ export default function Experience() {
                             className="space-y-6"
                         >
                             <div>
-                                <h1 className="text-left text-2xl text-white font-bold m-0 p-0">{experience[selectedExperienceID].experienceRole} <span><a href="https://www.calstatela.edu/engagement/epic-program" target="_blank" className={"" + experience[selectedExperienceID].experiencePrimaryColor}>@ {experience[selectedExperienceID].experienceBusiness}</a></span></h1>
+                                <h1 className="text-left text-2xl text-white font-bold m-0 p-0">{experience[selectedExperienceID].experienceRole} <span><a href={experience[selectedExperienceID].experienceLink} target="_blank" className={"" + experience[selectedExperienceID].experiencePrimaryColor}>@ {experience[selectedExperienceID].experienceBusiness}</a></span></h1>
                                 <p className="text-left text-sm text-[#A3A9C3] font-normal font-mono m-0 p-0 mt-2">{experience[selectedExperienceID].experienceStartDate} - {experience[selectedExperienceID].experienceEndDate}</p>
+                                <p className="text-left text-sm text-[#A3A9C3] font-normal font-mono m-0 p-0 mt-2">{experience[selectedExperienceID].experienceCommitmentStatus}</p>
                             </div>    
-                            <ul className="w-full flex flex-col m-0 p-0">
-                                {experience[selectedExperienceID].experienceTakeaways.map((experienceTakeaway, experienceTakeawayIDX) => (
+                            <ul className={"marker:" + experience[selectedExperienceID].experiencePrimaryColor + " w-full flex flex-col m-0 p-0 list-disc"}>
+                                {experience[selectedExperienceID].experienceTakeaways.map((experienceTakeaway) => (
                                     <li>
                                         <p className="text-left text-base text-white font-normal m-0 p-0">{experienceTakeaway}</p>
                                     </li>

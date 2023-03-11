@@ -12,6 +12,8 @@ import Footer from "./Components/Footer"
 
 import { socialLinks } from "./Utilities/socialLinks"
 
+// import Me from "./Assets/Me.png"
+
 export default function App() {
     const location = useLocation();
 

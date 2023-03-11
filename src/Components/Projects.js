@@ -2,6 +2,7 @@ import { motion } from "framer-motion"
 
 import { FiExternalLink, FiGithub } from "react-icons/fi"
 import { GrAppleAppStore } from "react-icons/gr"
+import { SiStreamlit } from "react-icons/si"
 
 import NewsNova from "../Assets/Projects/NewsNova.png"
 import DoneDidIt from "../Assets/Projects/DoneDidIt.png"
@@ -60,7 +61,7 @@ export default function Projects() {
             techStack: ["Python", "OpenCV", "NumPy"],
             links: [
                 {
-                    icon: <FiExternalLink/>,
+                    icon: <SiStreamlit/>,
                     url: "https://google.com"
                 },
                 {
@@ -91,14 +92,16 @@ export default function Projects() {
             transition={{ duration: 0.15 }}
             exit={{ y: 10, opacity: 0 }}        
         >
-            <div className="space-y-6">
+            <div className="space-y-6 w-full">
                 <h1 className="text-6xl m-0 p-0">🛠️</h1>
-                <div className="space-y-2">
+                <div className="space-y-2 w-full">
                     <div className="w-full flex flex-row items-center justify-center lg:space-x-4">
                         <h1 className="text-center text-3xl text-white font-extrabold m-0 p-0 mr-2 lg:mr-0">Projects</h1>
                         <hr className="flex-grow h-[2px] bg-[#0594E3]"/>
                     </div>     
-                    <p className="text-left text-lg text-[#A3A9C3] font-normal m-0 p-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p className="text-left text-lg text-[#A3A9C3] font-normal m-0 p-0">
+                        A compilation of my side projects. My aim when creating these was to develop my skills in a diverse set of technologies while build something cool with them!
+                    </p>
                 </div>
             </div>  
 
@@ -113,7 +116,7 @@ export default function Projects() {
                             key={projectIDX} 
                             href={project.links[0].url} 
                             target="_blank"
-                            className={project.primaryColor + " col-span-1 flex flex-col justify-start bg-opacity-10 backdrop-blur-lg rounded-xl p-4 m-0 space-y-4 shadow-xl hover:cursor-pointer hover:scale-95 transition-transform duration-300"}
+                            className={project.primaryColor + " col-span-1 flex flex-col justify-start bg-opacity-10 backdrop-blur-lg rounded-xl p-4 m-0 space-y-4 shadow-xl hover:cursor-pointer hover:scale-105 transition-transform duration-300"}
                             variants={projectsAnimationItem}
                         >
                             <div className="w-full flex flex-row items-start space-x-4">
@@ -128,7 +131,7 @@ export default function Projects() {
                                         <a 
                                             href={link.url} 
                                             target="_blank"
-                                            className={"text-3xl text-white transition-colors duration-500"}
+                                            className={"hover:" + project.primaryColor + " text-3xl text-white transition-colors duration-500"}
                                         >
                                             {link.icon}
                                         </a>                                      
