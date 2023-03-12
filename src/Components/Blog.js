@@ -1,13 +1,14 @@
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 
 export default function Blog() {
     return(
         <motion.div
-            className="max-w-3xl w-full flex flex-col items-start justify-start mt-32 lg:mt-40 space-y-48"
-            initial={{ y: 10, opacity: 0 }}
+            key="blog-motion-container"
+            className="max-w-3xl w-full flex flex-col items-start justify-start mt-32 lg:mt-40 space-y-12"       
+            initial={{ y: -10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.35 }}
-            exit={{ y: 10, opacity: 0 }}        
+            transition={{ duration: 0.35, delay: 0.15}}
+            exit={{ y: 10, opacity: 0 }}         
         >
             <div className="space-y-6 w-full">
                 <h1 className="text-6xl m-0 p-0">🧵</h1>
@@ -23,11 +24,10 @@ export default function Blog() {
             </div>  
 
             <div className="w-full flex flex-col items-center justify-center space-y-8">
-                <h1 className="text-center text-6xl m-0 p-0">🚧</h1>
-                <p className="text-center text-3xl font-light m-0 p-0 text-white">in profectum</p>
+
             </div>
 
-        </motion.div>
+        </motion.div>        
 
     )
 }

@@ -9,11 +9,12 @@ export default function Home() {
 
     return(
         <motion.div
+            key="home-motion-container"
             className="max-w-3xl w-full flex flex-col items-start justify-start mt-32 lg:mt-40 space-y-12"
-            initial={{ y: 10, opacity: 0 }}
+            initial={{ y: -10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.35 }}
-            exit={{ y: 10, opacity: 0 }}     
+            transition={{ duration: 0.35, delay: 0.15}}
+            exit={{ y: 10, opacity: 0 }}    
         >
             <div className="w-full flex flex-col items-start jusitfy-start space-y-6">
                 <p className="text-left text-lg text-[#0594E3] font-normal m-0 p-0">Welcome, my name is</p>

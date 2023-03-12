@@ -12,7 +12,9 @@ import Footer from "./Components/Footer"
 
 import { socialLinks } from "./Utilities/socialLinks"
 
-// import Me from "./Assets/Me.png"
+if (typeof window !== 'undefined') {
+    window.history.scrollRestoration = 'manual'
+}
 
 export default function App() {
     const location = useLocation();
@@ -47,11 +49,12 @@ export default function App() {
 
             <AnimatePresence
                 mode="wait"
-                initial={true}
+                initial={true}  
             >
                 <Routes 
-                    key={location.pathname}
+                    // key="router"
                     location={location}
+                    key={location.pathname}
                 >
                     <Route
                         key="home-route"
