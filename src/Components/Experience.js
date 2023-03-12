@@ -53,7 +53,7 @@ export default function Experience() {
                         <hr className="flex-grow h-[2px] bg-[#0594E3]"/>
                     </div>     
                     <p className="text-left text-lg text-[#A3A9C3] font-normal m-0 p-0">
-                        A list of places I have work
+                        My professional work experience from retail to tech 
                     </p>
                 </div>
             </div>  

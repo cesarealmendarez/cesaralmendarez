@@ -1,10 +1,5 @@
 import { motion } from "framer-motion"
 
-import BlogEmptyState from "../Assets/BlogEmptyState.svg"
-import BlogEmptyState2 from "../Assets/BlogEmptyState2.svg"
-import BlogEmptyState3 from "../Assets/BlogEmptyState3.svg"
-import BlogEmptyState4 from "../Assets/BlogEmptyState4.svg"
-
 export default function Blog() {
     return(
         <motion.div
