@@ -1,23 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.51be7b78.css",
-    "main.js": "/static/js/main.5a7e95f9.js",
+    "main.js": "/static/js/main.ba038c60.js",
     "static/media/DeepASL.gif": "/static/media/DeepASL.6e6abd7f2a214357537f.gif",
     "static/media/NewsNova.png": "/static/media/NewsNova.e769b7dfeaa24e01a3dc.png",
     "static/media/RewardLyst.gif": "/static/media/RewardLyst.a00a4784c8de1190b960.gif",
     "static/media/DoneDidIt.png": "/static/media/DoneDidIt.90663f110e12ca545c24.png",
     "static/media/Me.png": "/static/media/Me.ebe81bb890d3bfe535e3.png",
-    "static/media/BlogEmptyState4.svg": "/static/media/BlogEmptyState4.d55a965f11b3f71a31eb8bd616a7733f.svg",
     "static/media/Resume.pdf": "/static/media/Resume.cc262385c7315da9f84d.pdf",
-    "static/media/BlogEmptyState.svg": "/static/media/BlogEmptyState.f525977eb51769d9068258a50f10afae.svg",
-    "static/media/BlogEmptyState2.svg": "/static/media/BlogEmptyState2.e1f4810d806962b8671f8679a4e847de.svg",
-    "static/media/BlogEmptyState3.svg": "/static/media/BlogEmptyState3.23cb14e3cf05f0f26e5833609f281ef6.svg",
     "index.html": "/index.html",
     "main.51be7b78.css.map": "/static/css/main.51be7b78.css.map",
-    "main.5a7e95f9.js.map": "/static/js/main.5a7e95f9.js.map"
+    "main.ba038c60.js.map": "/static/js/main.ba038c60.js.map"
   },
   "entrypoints": [
     "static/css/main.51be7b78.css",
-    "static/js/main.5a7e95f9.js"
+    "static/js/main.ba038c60.js"
   ]
 }
