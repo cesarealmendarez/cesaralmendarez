@@ -30,7 +30,7 @@ export default function Experience() {
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             ],
-            experiencePrimaryColor: "text-yellow-500",
+            experiencePrimaryColor: "text-red-500",
             experienceLink: ""
         },
     ]; 
@@ -41,7 +41,7 @@ export default function Experience() {
         <motion.div
             key="experience-motion-container"
             className="max-w-3xl w-full flex flex-col items-start justify-start mt-32 lg:mt-40 space-y-12"    
-            initial={{ y: -10, opacity: 0 }}
+            initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.35, delay: 0.15}}
             exit={{ y: 10, opacity: 0 }}        
@@ -98,10 +98,10 @@ export default function Experience() {
                         >
                             <div>
                                 <h1 className="text-left text-2xl text-white font-bold m-0 p-0">{experience[selectedExperienceID].experienceRole} <span><a href={experience[selectedExperienceID].experienceLink} target="_blank" className={"" + experience[selectedExperienceID].experiencePrimaryColor}>@ {experience[selectedExperienceID].experienceBusiness}</a></span></h1>
-                                <p className="text-left text-sm text-[#A3A9C3] font-normal font-mono m-0 p-0 mt-2">{experience[selectedExperienceID].experienceStartDate} - {experience[selectedExperienceID].experienceEndDate}</p>
-                                <p className="text-left text-sm text-[#A3A9C3] font-normal font-mono m-0 p-0 mt-2">{experience[selectedExperienceID].experienceCommitmentStatus}</p>
+                                <p className="text-left text-sm text-[#A3A9C3] font-normal font-mono m-0 p-0 mt-2">{experience[selectedExperienceID].experienceStartDate} - {experience[selectedExperienceID].experienceEndDate} - {experience[selectedExperienceID].experienceCommitmentStatus}</p>
+                                {/* <p className="text-left text-sm text-[#A3A9C3] font-normal font-mono m-0 p-0 mt-2"></p> */}
                             </div>    
-                            <ul className={"marker:" + experience[selectedExperienceID].experiencePrimaryColor + " w-full flex flex-col m-0 p-0 list-disc"}>
+                            <ul className={`marker: + ${experience[selectedExperienceID].experiencePrimaryColor} + " w-full flex flex-col m-0 p-0 list-disc`}>
                                 {experience[selectedExperienceID].experienceTakeaways.map((experienceTakeaway) => (
                                     <li>
                                         <p className="text-left text-base text-white font-normal m-0 p-0">{experienceTakeaway}</p>

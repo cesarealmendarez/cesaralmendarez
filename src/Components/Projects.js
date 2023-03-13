@@ -7,6 +7,7 @@ import { SiStreamlit } from "react-icons/si"
 import NewsNova from "../Assets/Projects/NewsNova.png"
 import DoneDidIt from "../Assets/Projects/DoneDidIt.png"
 import DeepASL from "../Assets/Projects/DeepASL.gif"
+import CesarAlmendarezCom from "../Assets/Projects/CesarAlmendarezCom.png"
 
 export default function Projects() {
     const projects = [
@@ -16,8 +17,8 @@ export default function Projects() {
             name: "Done Did It",
             description: "✅ iOS To-Do List App. Inspired by 'Microsoft To Do'. SwiftUI + Firebase",
             category: "iOS Developement",
-            primaryColor: "bg-rose-600",
-            secondaryColor: "text-rose-500",
+            primaryColor: "bg-[#e11d48]",
+            secondaryColor: "text-[#f43f5e]",
             techStack: ["Swift", "SwiftUI", "Firebase"],
             links: [
                 {
@@ -36,8 +37,8 @@ export default function Projects() {
             name: "NewsNova",
             description: "🚨 📰 Live news web app. Interfacing MediaStack API with Next.js",
             category: "Web Developement",
-            primaryColor: "bg-violet-500",
-            secondaryColor: "text-violet-400",
+            primaryColor: "bg-[#8b5cf6]",
+            secondaryColor: "text-[#a78bfa]",
             techStack: ["Next.js", "TypeScript", "TailwindCSS"],
             links: [
                 {
@@ -56,8 +57,8 @@ export default function Projects() {
             name: "DeepASL",
             description: "🤖 Classification of ASL alphabet gestures with Convolutional Neural Networks",
             category: "Artificial Intelligence",
-            primaryColor: "bg-green-500",
-            secondaryColor: "text-green-400",
+            primaryColor: "bg-[#4ade80]",
+            secondaryColor: "text-[#4ade80]",
             techStack: ["Python", "OpenCV", "NumPy"],
             links: [
                 {
@@ -69,7 +70,23 @@ export default function Projects() {
                     url: "https://github.com/cesarealmendarez/DeepASL"
                 },
             ]  
-        }                             
+        }, 
+        {
+            id: 3,
+            image: CesarAlmendarezCom,
+            name: "Portfolio Website",
+            description: "💻 🗂️ My developer portfolio living on the WWW.",
+            category: "Web Developement",
+            primaryColor: "bg-[#0594E3]",
+            secondaryColor: "text-[#0594E3]",
+            techStack: ["React", "framer-motion", "HeadlessUI"],
+            links: [
+                {
+                    icon: <FiGithub/>,
+                    url: "https://github.com/cesarealmendarez/cesaralmendarez"
+                },
+            ]  
+        },                            
     ]
 
     const projectsAnimationContainer = {
@@ -88,10 +105,10 @@ export default function Projects() {
         <motion.div
             key="projects-motion-container"
             className="max-w-3xl w-full flex flex-col items-start justify-start mt-32 lg:mt-40 space-y-12"
-            initial={{ y: -10, opacity: 0 }}
+            initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.35, delay: 0.15}}
-            exit={{ y: 10, opacity: 0 }}        
+            exit={{ y: 10, opacity: 0 }}      
         >
             <div className="space-y-6 w-full">
                 <h1 className="text-6xl m-0 p-0">🛠️</h1>
@@ -128,11 +145,13 @@ export default function Projects() {
                                     />
                                 </div>
                                 <div className="flex flex-grow flex-row items-start justify-end space-x-4">
-                                    {project.links.map((link) => (
+                                    {project.links.map((link, linkIDX) => (
                                         <a 
+                                            id={linkIDX}
+                                            key={linkIDX}
                                             href={link.url} 
                                             target="_blank"
-                                            className={"hover:" + project.primaryColor + " text-3xl text-white transition-colors duration-500"}
+                                            className={`text-white text-3xl transition-all duration-500`}                                            
                                         >
                                             {link.icon}
                                         </a>                                      

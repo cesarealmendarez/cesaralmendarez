@@ -11,7 +11,7 @@ export default function Home() {
         <motion.div
             key="home-motion-container"
             className="max-w-3xl w-full flex flex-col items-start justify-start mt-32 lg:mt-40 space-y-12"
-            initial={{ y: -10, opacity: 0 }}
+            initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.35, delay: 0.15}}
             exit={{ y: 10, opacity: 0 }}    
@@ -24,7 +24,7 @@ export default function Home() {
                     <h1 className="text-left text-5xl lg:text-6xl text-[#A3A9C3] font-bold m-0 p-0">Web and Mobile App Developer</h1>
                 </div>
 
-                <p className="text-left text-lg text-[#A3A9C3] font-normal m-0 p-0">Thanks for checking out my portfolio! I am currently a sophomore at CSULA pursuing a BS in Computer Science. I specialize in web developement however my interests span across all realms of CS. This website contains a general overview of my projects and ventures in the field so far.</p>
+                <p className="text-left text-lg text-[#A3A9C3] font-normal m-0 p-0">Thanks for checking out my portfolio! I am currently a sophomore at CSULA studying Computer Science. This website contains a general overview of my projects and ventures in the field so far.</p>
             </div>
             
             <button 
@@ -34,7 +34,6 @@ export default function Home() {
                 Check Out My Work
                 <FiChevronRight className="ml-4"/>
             </button>  
-
         </motion.div>
     )
 }

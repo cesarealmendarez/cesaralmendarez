@@ -5,7 +5,7 @@ export default function Blog() {
         <motion.div
             key="blog-motion-container"
             className="max-w-3xl w-full flex flex-col items-start justify-start mt-32 lg:mt-40 space-y-12"       
-            initial={{ y: -10, opacity: 0 }}
+            initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.35, delay: 0.15}}
             exit={{ y: 10, opacity: 0 }}         
