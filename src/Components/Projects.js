@@ -114,7 +114,7 @@ export default function Projects() {
                         <hr className="flex-grow h-[2px] bg-[#0594E3]"/>
                     </div>     
                     <p className="text-left text-lg text-[#A3A9C3] font-normal m-0 p-0">
-                        A compilation of my side projects. My aim when creating these was to develop my skills in a diverse set of technologies while build something cool with them!
+                        A compilation of my side projects. My aim when creating these was to develop my skills in a diverse set of technologies while building something cool with them!
                     </p>
                 </div>
             </div>  
