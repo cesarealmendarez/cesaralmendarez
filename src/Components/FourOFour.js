@@ -6,10 +6,11 @@ export default function FourOFour() {
 
     return(
         <motion.div
+            key="fourofour-motion-container"
             className="max-w-3xl w-full h-screen flex flex-col items-center justify-center space-y-12"
             initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.35 }}
+            transition={{ duration: 0.35, delay: 0.15}}
             exit={{ y: 10, opacity: 0 }}        
         >
             <div className="w-full flex flex-row items-center justify-center space-x-6">

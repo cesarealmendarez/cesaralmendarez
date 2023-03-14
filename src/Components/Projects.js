@@ -62,10 +62,6 @@ export default function Projects() {
             techStack: ["Python", "OpenCV", "NumPy"],
             links: [
                 {
-                    icon: <SiStreamlit/>,
-                    url: "https://google.com"
-                },
-                {
                     icon: <FiGithub/>,
                     url: "https://github.com/cesarealmendarez/DeepASL"
                 },
