@@ -50,7 +50,7 @@ export default function Home() {
                 </div>
             </div> */}
 
-            <div className="w-full grid grid-cols-5">
+            {/* <div className="w-full grid grid-cols-5">
                 <div className="col-span-4 space-y-6 w-full pr-12">
                     <h1 className="text-6xl m-0 p-0"></h1>
                     <div className="space-y-2 w-full">
@@ -70,7 +70,7 @@ export default function Home() {
                         
                     </div>
                 </div>
-            </div>           
+            </div>            */}
         </motion.div>
     )
 }
