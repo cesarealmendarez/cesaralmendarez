@@ -1,6 +1,8 @@
 import { motion } from "framer-motion"
 
 import { FiExternalLink } from "react-icons/fi"
+import { TbGiftCard } from "react-icons/tb";
+import { HiOutlineGift } from "react-icons/hi";
 
 import RewardLyst from "../Assets/Projects/RewardLyst.gif"
 
@@ -9,7 +11,7 @@ export default function Working() {
         image: RewardLyst,
         name: "RewardLyst.com",
         description: "SaaS rewards platform for small businesses ",
-        category: "Web Developement and Advertising",
+        category: "Web Developement and Online Advertising",
         primaryColor: "bg-rose-600",
         secondaryColor: "text-rose-500",
         techStack: ["Next.js", "React Native", "Supabase",],
@@ -51,7 +53,7 @@ export default function Working() {
                         <hr className="flex-grow h-[2px] bg-[#0594E3]"/>
                     </div>     
                     <p className="text-left text-lg text-[#A3A9C3] font-normal m-0 p-0">
-                        Quick summary of any side projects or businesses im building at the moment!
+                        Summary of any side projects or businesses I'm building at the moment!
                     </p>
                 </div>
             </div>              
@@ -65,15 +67,21 @@ export default function Working() {
                     key={project.id} 
                     href={project.links[0].url} 
                     target="_blank"
-                    className={project.primaryColor + " w-full flex flex-col justify-start bg-opacity-10 backdrop-blur-lg rounded-xl p-4 m-0 space-y-4 shadow-xl hover:cursor-pointer hover:scale-95 transition-transform duration-300"}
+                    className={project.primaryColor + " w-full flex flex-col justify-start bg-opacity-10 backdrop-blur-lg rounded-xl p-4 m-0 space-y-4 shadow-xl hover:cursor-pointer hover:scale-105 transition-transform duration-300"}
                     variants={projectAnimationItem}
                 >
                     <div className="w-full flex flex-row items-start space-x-4">
                         <div className="flex flex-grow flex-col items-start justify-start">
-                            <img 
-                                src={project.image} 
-                                className="w-2/3 h-auto rounded-xl object-cover"
-                            />
+                            <div className="w-full flex flex-col items-start justify-end flex-grow space-y-1">
+                                <p className={project.secondaryColor + " text-left text-base font-normal font-mono m-0 p-0"}>{project.category}</p>
+                                <h1 className="text-left text-2xl text-white font-extrabold m-0 p-0">{project.name}</h1>
+                                <p className="text-left text-base text-white font-normal m-0 p-0">{project.description}</p>
+                            </div>
+                            <div className="w-full flex flex-row items-center justify-start space-x-4">
+                                {project.techStack.map((tech) => (
+                                    <p className={project.secondaryColor + " text-left text-sm font-light font-mono m-0 p-0"}>{tech}</p>
+                                ))}
+                            </div>                            
                         </div>
                         <div className="flex flex-grow flex-row items-start justify-end space-x-4">
                             {project.links.map((link) => (
@@ -87,16 +95,6 @@ export default function Working() {
                             ))}
                         </div>
                     </div>                                
-                    <div className="w-full flex flex-col items-start justify-end flex-grow space-y-1">
-                        <p className={project.secondaryColor + " text-left text-base font-normal font-mono m-0 p-0"}>{project.category}</p>
-                        <h1 className="text-left text-2xl text-white font-extrabold m-0 p-0">{project.name}</h1>
-                        <p className="text-left text-base text-white font-normal m-0 p-0">{project.description}</p>
-                    </div>
-                    <div className="w-full flex flex-row items-center justify-start space-x-4">
-                        {project.techStack.map((tech) => (
-                            <p className={project.secondaryColor + " text-left text-sm font-light font-mono m-0 p-0"}>{tech}</p>
-                        ))}
-                    </div>
                 </motion.a>
             </motion.div>
 

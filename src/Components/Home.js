@@ -4,8 +4,6 @@ import { FiChevronRight } from "react-icons/fi"
 
 import Footer from "../Components/Footer"
 
-import Me from "../Assets/Me.png"
-
 export default function Home() {
     const navigate = useNavigate()
 

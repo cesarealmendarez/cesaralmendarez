@@ -35,7 +35,7 @@ export default function Projects() {
             id: 1,
             image: NewsNova,
             name: "NewsNova",
-            description: "🚨 📰 Live news web app. Interfacing MediaStack API with Next.js",
+            description: "🚨 📰 Live news web app. Interfacing MediaStack API with Next.js 13",
             category: "Web Developement",
             primaryColor: "bg-[#8b5cf6]",
             secondaryColor: "text-[#a78bfa]",
@@ -75,7 +75,7 @@ export default function Projects() {
             category: "Web Developement",
             primaryColor: "bg-[#0594E3]",
             secondaryColor: "text-[#0594E3]",
-            techStack: ["React", "framer-motion", "HeadlessUI"],
+            techStack: ["React", "Framer Motion", "HeadlessUI"],
             links: [
                 {
                     icon: <FiGithub/>,
@@ -114,7 +114,8 @@ export default function Projects() {
                         <hr className="flex-grow h-[2px] bg-[#0594E3]"/>
                     </div>     
                     <p className="text-left text-lg text-[#A3A9C3] font-normal m-0 p-0">
-                        A compilation of my side projects. My aim when creating these was to develop my skills in a diverse set of technologies while building something cool with them!
+                        {/* A compilation of my side projects. My goal when creating these was to develop my skills in a diverse set of technologies while building something cool with them! */}
+                        This is a collection of my side projects, each created to expand my skillset across a diverse range of tech, all while building something cool!           
                     </p>
                 </div>
             </div>  

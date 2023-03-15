@@ -10,7 +10,8 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi"
 import { IoCloseOutline } from "react-icons/io5"
 
 import Resume from "../Assets/Resume.pdf"
-import Me from "../Assets/Me.png"
+// import Me from "../Assets/Me.png"
+import Me from "../Assets/Me2.jpeg"
 
 import { navbarLinks } from "../Utilities/navbarLinks"
 import { socialLinks } from "../Utilities/socialLinks"
@@ -42,7 +43,7 @@ export default function NavBar() {
                     >
                         <img 
                             src={Me} 
-                            className="w-10 h-10 object-cover"
+                            className="w-10 h-10 object-cover rounded-full"
                         />
                     </button>
 

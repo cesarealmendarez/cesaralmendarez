@@ -93,6 +93,8 @@ export default function App() {
                     />
                 </Routes>                
             </AnimatePresence>
+
+            {/* <Footer/> */}
         </div>                     
     )
 }
