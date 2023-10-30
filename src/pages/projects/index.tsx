@@ -9,10 +9,10 @@ export default function Projects() {
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
             </p>
 
-            <ul className="w-full border-t-[0.5px] border-neutral-800">
+            <ul className="w-full border-neutral-800">
                 {projects.map((project, idx) => {
                     return (
-                        <li className="w-full flex flex-col items-start justify-start border-b-[0.5px] border-neutral-800 py-4 px-0 space-y-2">
+                        <li className="w-full flex flex-col items-start justify-start border-t-[0.5px] border-neutral-800 py-4 px-0 space-y-2">
                             <div className="w-full flex flex-row items-center justify-start">
                                 <p className="flex text-left text-sm text-white font-light">{project.name}</p>
 
