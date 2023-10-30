@@ -61,12 +61,12 @@ export const projects = [
             {
                 id: 0,
                 url: "https://apps.apple.com/us/app/done-did-it/id6445909068",
-                icon: <ArrowUpRight size={18} strokeWidth={1.5} className="text-neutral-400" />,
+                icon: <ArrowUpRight size={18} strokeWidth={1.5} className="text-white" />,
             },
             {
                 id: 1,
                 url: "https://github.com/cesarealmendarez/DoneDidIt",
-                icon: <Github size={18} strokeWidth={1.5} className="text-neutral-400" />,
+                icon: <Github size={18} strokeWidth={1.5} className="text-white" />,
             },
         ]
     },
@@ -82,12 +82,12 @@ export const projects = [
             {
                 id: 0,
                 url: "https://newsnova.vercel.app/",
-                icon: <ArrowUpRight size={18} strokeWidth={1.5} className="text-neutral-400" />,
+                icon: <ArrowUpRight size={18} strokeWidth={1.5} className="text-white" />,
             },
             {
                 id: 1,
                 url: "https://github.com/cesarealmendarez/NewsNova",
-                icon: <Github size={18} strokeWidth={1.5} className="text-neutral-400" />,
+                icon: <Github size={18} strokeWidth={1.5} className="text-white" />,
             },
         ]
 
@@ -104,7 +104,7 @@ export const projects = [
             {
                 id: 0,
                 url: "https://github.com/cesarealmendarez/DeepASL",
-                icon: <Github size={18} strokeWidth={1.5} className="text-neutral-400" />,
+                icon: <Github size={18} strokeWidth={1.5} className="text-white" />,
             },
         ]
     },
