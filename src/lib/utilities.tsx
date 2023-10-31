@@ -13,14 +13,14 @@ export const navigationLinks = [
         url: "/projects",
         target: "_self"
     },
-    // {
-    //     id: 2,
-    //     name: "Experience",
-    //     url: "/experience",
-    //     target: "_self"
-    // },
     {
         id: 2,
+        name: "Experience",
+        url: "/experience",
+        target: "_self"
+    },
+    {
+        id: 3,
         name: "Resume",
         url: "/CesarAlmendarez.pdf",
         target: "_blank"
