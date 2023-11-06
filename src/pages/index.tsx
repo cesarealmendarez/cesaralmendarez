@@ -6,8 +6,6 @@ export default function Index() {
     return (
         <div className="w-full flex flex-col items-start justify-start space-y-6 mt-6">
             <p className="text-left text-sm text-white font-light">
-                {/* Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus */}
                 Thanks for checking out my portfolio! I am currently a Junior at CSULA studying Computer Science.
                 This site contains a general overview of my projects and ventures in the field so far.
             </p>

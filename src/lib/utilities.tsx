@@ -41,17 +41,7 @@ export const socialLinks = [
         id: 3,
         name: "LeetCode",
         url: "https://leetcode.com/cesarealmendarez"
-    },
-    // {
-    //     id: 4,
-    //     name: "Kaggle",
-    //     url: "https://kaggle.com"
-    // },
-    // {
-    //     id: 5,
-    //     name: "Substack",
-    //     url: "https://substack.com"
-    // }
+    }
 ]
 
 export const projects = [
@@ -65,7 +55,7 @@ export const projects = [
             {
                 id: 0,
                 url: "https://apps.apple.com/us/app/done-did-it/id6445909068",
-                icon: <ArrowUpRight size={18} strokeWidth={1.5} className="text-white hover:text-rose-700 transition-colors duration-300" />,
+                icon: <ArrowUpRight size={18} strokeWidth={1.5} className="text-white" />,
             },
             {
                 id: 1,

@@ -31,10 +31,6 @@ export default function App({ Component, pageProps }: AppProps) {
                             return (
                                 <title>Cesar's Projects</title>
                             )
-                        case "/experience":
-                            return (
-                                <title>Cesar's Experience</title>
-                            )
                     }
                 })()}
             </Head>

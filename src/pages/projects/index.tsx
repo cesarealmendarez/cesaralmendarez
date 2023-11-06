@@ -14,15 +14,17 @@ export default function Projects() {
                     return (
                         <li key={idx} className="w-full flex flex-col items-start justify-start border-t-[0.5px] border-neutral-800 py-4 px-0 space-y-2">
                             <div className="w-full flex flex-row items-center justify-start">
-                                <p className="flex text-left text-sm text-white font-light">
-                                    {project.name}
-                                </p>
+                                <Link href={project.links[0].url} target="_blank">
+                                    <p className="flex text-left text-sm text-white font-light">
+                                        {project.name}
+                                    </p>
+                                </Link>
 
                                 <ul className="flex flex-row grow items-center justify-end space-x-4">
                                     {project.links.map((link, idx) => {
                                         return (
                                             <li key={idx}>
-                                                <Link href={link.url} target="_blank" className="hover:text-rose-500">
+                                                <Link href={link.url} target="_blank">
                                                     {link.icon}
                                                 </Link>
                                             </li>
@@ -32,9 +34,11 @@ export default function Projects() {
                             </div>
 
                             <div className="flex flex-col items-start justify-start">
-                                <p className="text-left text-sm text-neutral-400 font-light">
-                                    {project.description}
-                                </p>
+                                <Link href={project.links[0].url} target="_blank">
+                                    <p className="text-left text-sm text-neutral-400 font-light">
+                                        {project.description}
+                                    </p>
+                                </Link>
                             </div>
 
                             <ul className="flex flex-row items-center justify-start space-x-2">
