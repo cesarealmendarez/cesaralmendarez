@@ -54,7 +54,7 @@ export const projects = [
     {
         id: 0,
         name: "DoneDidIt",
-        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa",
+        description: "✅ 📱 iOS To-Do List App. Inspired by 'Microsoft To Do'. SwiftUI + Firebase",
         type: "iOS Development",
         tech: ["Swift", "Xcode", "Firebase"],
         links: [
@@ -73,7 +73,7 @@ export const projects = [
     {
         id: 1,
         name: "NewsNova",
-        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa",
+        description: "🚨 📰 Live news web app. Interfacing MediaStack API with Next.js, leveraging StepZen for GraphQL queries. Styling with TailwindCSS and HeadlessUI. Statically typed in TypeScript.",
         url: "",
         image: "",
         type: "Web Development",
@@ -95,7 +95,7 @@ export const projects = [
     {
         id: 2,
         name: "DeepASL",
-        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa",
+        description: "🤖 🖐️ Classification of live ASL alphabet gestures with Convolutional Neural Networks",
         url: "",
         image: "",
         type: "Computer Vision & CNNs",
