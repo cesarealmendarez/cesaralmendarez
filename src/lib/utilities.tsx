@@ -3,7 +3,7 @@ import { ArrowUpRight, Github } from "lucide-react";
 export const navigationLinks = [
     {
         id: 0,
-        name: "Cesar Almendarez",
+        name: "Index",
         url: "/",
         target: "_self"
     },
@@ -21,10 +21,16 @@ export const navigationLinks = [
     },
     {
         id: 3,
+        name: "Blog",
+        url: "/blog",
+        target: "_self"
+    },
+    {
+        id: 4,
         name: "Resume",
         url: "/CesarAlmendarez.pdf",
         target: "_blank"
-    },
+    }
 ]
 
 export const socialLinks = [
@@ -61,7 +67,7 @@ export const projects = [
             {
                 id: 0,
                 url: "https://apps.apple.com/us/app/done-did-it/id6445909068",
-                icon: <ArrowUpRight size={18} strokeWidth={1.5} className="text-white" />,
+                icon: <ArrowUpRight size={18} strokeWidth={1.5} className="text-white hover:text-rose-700 transition-colors duration-300" />,
             },
             {
                 id: 1,
@@ -107,6 +113,6 @@ export const projects = [
                 icon: <Github size={18} strokeWidth={1.5} className="text-white" />,
             },
         ]
-    },
+    }
 ]
 

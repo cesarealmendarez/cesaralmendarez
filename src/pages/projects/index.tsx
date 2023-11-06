@@ -6,21 +6,23 @@ export default function Projects() {
     return (
         <div className="w-full flex flex-col items-start justify-start space-y-6 mt-6">
             <p className="text-left text-sm text-white font-light">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                A collection of my side projects, each created to expand my skill set across a diverse range of tech, all while building something cool!
             </p>
 
-            <ul className="w-full border-neutral-800">
+            <ul className="w-full">
                 {projects.map((project, idx) => {
                     return (
-                        <li className="w-full flex flex-col items-start justify-start border-t-[0.5px] border-neutral-800 py-4 px-0 space-y-2">
+                        <li key={idx} className="w-full flex flex-col items-start justify-start border-t-[0.5px] border-neutral-800 py-4 px-0 space-y-2">
                             <div className="w-full flex flex-row items-center justify-start">
-                                <p className="flex text-left text-sm text-white font-light">{project.name}</p>
+                                <p className="flex text-left text-sm text-white font-light">
+                                    {project.name}
+                                </p>
 
                                 <ul className="flex flex-row grow items-center justify-end space-x-4">
                                     {project.links.map((link, idx) => {
                                         return (
                                             <li key={idx}>
-                                                <Link href={link.url} target="_blank">
+                                                <Link href={link.url} target="_blank" className="hover:text-rose-500">
                                                     {link.icon}
                                                 </Link>
                                             </li>
@@ -30,7 +32,9 @@ export default function Projects() {
                             </div>
 
                             <div className="flex flex-col items-start justify-start">
-                                <p className="text-left text-sm text-neutral-400 font-light">{project.description}</p>
+                                <p className="text-left text-sm text-neutral-400 font-light">
+                                    {project.description}
+                                </p>
                             </div>
 
                             <ul className="flex flex-row items-center justify-start space-x-2">
@@ -41,9 +45,10 @@ export default function Projects() {
                                                 {tech}
                                             </p>
 
-
                                             {idx < project.tech.length - 1 ?
-                                                <span className="text-left text-sm text-black dark:text-neutral-400 font-light">·</span>
+                                                <span className="text-left text-sm text-black dark:text-neutral-400 font-light">
+                                                    ·
+                                                </span>
                                                 :
                                                 <></>
                                             }
@@ -51,12 +56,10 @@ export default function Projects() {
                                     )
                                 })}
                             </ul>
-
                         </li>
                     )
                 })}
             </ul>
-
         </div>
     )
 }

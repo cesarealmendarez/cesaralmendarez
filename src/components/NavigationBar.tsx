@@ -14,9 +14,13 @@ export default function NavigationBar() {
                         <li key={idx}>
                             <Link href={link.url} target={link.target}>
                                 {router.pathname == link.url ?
-                                    <p className="text-left text-sm text-white font-light transition-colors duration-300">{link.name}</p>
+                                    <p className="text-left text-sm text-white font-light transition-colors duration-300">
+                                        {link.name}
+                                    </p>
                                     :
-                                    <p className="text-left text-sm text-neutral-500 hover:text-neutral-400 font-light transition-colors duration-300">{link.name}</p>
+                                    <p className="text-left text-sm text-neutral-500 hover:text-neutral-400 font-light transition-colors duration-300">
+                                        {link.name}
+                                    </p>
                                 }
                             </Link>
                         </li>
