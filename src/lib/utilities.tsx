@@ -48,16 +48,16 @@ export const socialLinks = [
         name: "LeetCode",
         url: "https://leetcode.com/cesarealmendarez"
     },
-    {
-        id: 4,
-        name: "Kaggle",
-        url: "https://kaggle.com"
-    },
-    {
-        id: 5,
-        name: "Substack",
-        url: "https://substack.com"
-    }
+    // {
+    //     id: 4,
+    //     name: "Kaggle",
+    //     url: "https://kaggle.com"
+    // },
+    // {
+    //     id: 5,
+    //     name: "Substack",
+    //     url: "https://substack.com"
+    // }
 ]
 
 export const projects = [
