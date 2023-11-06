@@ -47,6 +47,16 @@ export const socialLinks = [
         id: 3,
         name: "LeetCode",
         url: "https://leetcode.com/cesarealmendarez"
+    },
+    {
+        id: 4,
+        name: "Kaggle",
+        url: "https://kaggle.com"
+    },
+    {
+        id: 5,
+        name: "Substack",
+        url: "https://substack.com"
     }
 ]
 
