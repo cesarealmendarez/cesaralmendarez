@@ -21,12 +21,6 @@ export const navigationLinks = [
     },
     {
         id: 3,
-        name: "Blog",
-        url: "/blog",
-        target: "_self"
-    },
-    {
-        id: 4,
         name: "Resume",
         url: "/CesarAlmendarez.pdf",
         target: "_blank"
