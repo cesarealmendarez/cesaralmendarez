@@ -21,7 +21,7 @@ export default function Index() {
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
             </p> */}
 
-            <ul className="flex flex-row items-center justify-start space-x-2">
+            <ul className="flex flex-row items-center justify-start space-x-2 flex-wrap">
                 {socialLinks.map((link, idx) => {
                     return (
                         <li className="flex flex-row items-center justify-start space-x-2">
