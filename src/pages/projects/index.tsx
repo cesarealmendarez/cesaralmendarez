@@ -41,12 +41,12 @@ export default function Projects() {
                                 {project.tech.map((tech, idx) => {
                                     return (
                                         <li className="flex flex-row items-center justify-start space-x-2">
-                                            <p className="text-left text-sm text-black dark:text-neutral-400 font-light">
+                                            <p className="text-left text-sm text-neutral-400 font-light">
                                                 {tech}
                                             </p>
 
                                             {idx < project.tech.length - 1 ?
-                                                <span className="text-left text-sm text-black dark:text-neutral-400 font-light">
+                                                <span className="text-left text-sm text-neutral-400 font-light">
                                                     ·
                                                 </span>
                                                 :
