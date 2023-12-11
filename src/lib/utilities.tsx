@@ -16,10 +16,10 @@ export const navigationLinks = [
     {
         id: 2,
         name: "Resume",
-        url: "/CesarAlmendarez.pdf",
+        url: "/Cesar-Almendarez-Resume-Fall-2023.pdf",
         target: "_blank"
     }
-]
+];
 
 export const socialLinks = [
     {
@@ -42,7 +42,7 @@ export const socialLinks = [
         name: "LeetCode",
         url: "https://leetcode.com/cesarealmendarez"
     }
-]
+];
 
 export const projects = [
     {
@@ -102,5 +102,4 @@ export const projects = [
             },
         ]
     }
-]
-
+];

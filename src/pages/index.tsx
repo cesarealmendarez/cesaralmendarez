@@ -1,6 +1,6 @@
-import Link from "next/link"
+import Link from "next/link";
 
-import { socialLinks } from "@/lib/utilities"
+import { socialLinks } from "@/lib/utilities";
 
 export default function Index() {
     return (
@@ -9,15 +9,6 @@ export default function Index() {
                 Thanks for checking out my portfolio! I am currently a Junior at CSULA studying Computer Science.
                 This site contains a general overview of my projects and ventures in the field so far.
             </p>
-
-            {/* <p className="text-left text-sm text-white font-light">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-            </p>
-
-            <p className="text-left text-sm text-white font-light">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-            </p> */}
 
             <ul className="flex flex-row items-center justify-start space-x-2 flex-wrap">
                 {socialLinks.map((link, idx) => {
@@ -41,5 +32,5 @@ export default function Index() {
                 })}
             </ul>
         </div>
-    )
+    );
 }

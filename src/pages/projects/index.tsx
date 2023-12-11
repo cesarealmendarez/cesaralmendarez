@@ -1,6 +1,6 @@
-import Link from "next/link"
+import Link from "next/link";
 
-import { projects } from "@/lib/utilities"
+import { projects } from "@/lib/utilities";
 
 export default function Projects() {
     return (
@@ -57,11 +57,11 @@ export default function Projects() {
                                                 <></>
                                             }
                                         </li>
-                                    )
+                                    );
                                 })}
                             </ul>
                         </li>
-                    )
+                    );
                 })}
             </ul>
         </div>

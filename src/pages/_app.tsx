@@ -1,22 +1,22 @@
-import "@/styles/globals.css"
-import type { AppProps } from "next/app"
-import { useRouter } from "next/router"
-import Head from "next/head"
-import Link from "next/link"
+import "@/styles/globals.css";
+import type { AppProps } from "next/app";
+import { useRouter } from "next/router";
+import Head from "next/head";
+import Link from "next/link";
 
-import Index from "."
-import Projects from "./projects"
-import Experience from "./experience"
+import Index from ".";
+import Projects from "./projects";
+import Experience from "./experience";
 
-import Footer from "@/components/Footer"
-import NavigationBar from "@/components/NavigationBar"
-import { Providers } from "@/lib/providers"
+import Footer from "@/components/Footer";
+import NavigationBar from "@/components/NavigationBar";
+import { Providers } from "@/lib/providers";
 
-import { useTheme } from "next-themes"
+import { useTheme } from "next-themes";
 
 export default function App({ Component, pageProps }: AppProps) {
-    const { theme, setTheme } = useTheme()
-    let router = useRouter()
+    const { theme, setTheme } = useTheme();
+    let router = useRouter();
 
     return (
         <>
@@ -26,11 +26,11 @@ export default function App({ Component, pageProps }: AppProps) {
                         case "/":
                             return (
                                 <title>Cesar Almendarez</title>
-                            )
+                            );
                         case "/projects":
                             return (
                                 <title>Cesar's Projects</title>
-                            )
+                            );
                     }
                 })()}
             </Head>
@@ -46,22 +46,23 @@ export default function App({ Component, pageProps }: AppProps) {
                                     case "/":
                                         return (
                                             <Index />
-                                        )
+                                        );
                                     case "/projects":
                                         return (
                                             <Projects />
-                                        )
+                                        );
                                     case "/experience":
                                         return (
                                             <Experience />
-                                        )
+                                        );
                                 }
                             })()}
                         </div>
                     </div>
+
                     <Footer />
                 </div>
             </Providers>
         </>
-    )
+    );
 }
