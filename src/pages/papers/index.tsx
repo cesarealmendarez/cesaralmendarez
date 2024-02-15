@@ -30,16 +30,15 @@ export default function Papers() {
                                         key={idx}
                                         className="flex flex-row items-center justify-start space-x-2"
                                     >
+                                        <p className="text-left text-sm font-light text-neutral-400">
+                                            {paper.readTimeMin} min -
+                                        </p>
+
                                         <Link href={paper.link} target="_blank">
                                             <p className="text-left text-sm font-light text-neutral-400 underline transition-colors duration-300 hover:text-neutral-300">
                                                 {paper.title}
                                             </p>
                                         </Link>
-
-                                        <p className="text-left text-sm font-light text-neutral-400">
-                                            {" "}
-                                            - {paper.readTimeMin} min
-                                        </p>
                                     </li>
                                 );
                             })}
@@ -65,16 +64,15 @@ export default function Papers() {
                                         key={idx}
                                         className="flex flex-row items-center justify-start space-x-2"
                                     >
+                                        <p className="text-left text-sm font-light text-neutral-400">
+                                            {paper.readTimeMin} min -
+                                        </p>
+
                                         <Link href={paper.link} target="_blank">
                                             <p className="text-left text-sm font-light text-neutral-400 underline transition-colors duration-300 hover:text-neutral-300">
                                                 {paper.title}
                                             </p>
                                         </Link>
-
-                                        <p className="text-left text-sm font-light text-neutral-400">
-                                            {" "}
-                                            - {paper.readTimeMin} min
-                                        </p>
                                     </li>
                                 );
                             })}
@@ -100,16 +98,15 @@ export default function Papers() {
                                         key={idx}
                                         className="flex flex-row items-center justify-start space-x-2"
                                     >
+                                        <p className="text-left text-sm font-light text-neutral-400">
+                                            {paper.readTimeMin} min -
+                                        </p>
+
                                         <Link href={paper.link} target="_blank">
                                             <p className="text-left text-sm font-light text-neutral-400 underline transition-colors duration-300 hover:text-neutral-300">
                                                 {paper.title}
                                             </p>
                                         </Link>
-
-                                        <p className="text-left text-sm font-light text-neutral-400">
-                                            {" "}
-                                            - {paper.readTimeMin} min
-                                        </p>
                                     </li>
                                 );
                             })}
