@@ -23,6 +23,8 @@ export default function App({ Component, pageProps }: AppProps) {
                             return <title>Cesar Almendarez</title>;
                         case "/projects":
                             return <title>Cesar's Projects</title>;
+                        case "/papers":
+                            return <title>Cesar's Papers</title>;
                     }
                 })()}
             </Head>
