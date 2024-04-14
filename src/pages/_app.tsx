@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
                     if (router.pathname as string == "/") {
                         return <title>Cesar Almendarez</title>;
                     } else if (router.pathname as string == "/projects") {
-                        return <title>Cesar's Project</title>;
+                        return <title>Cesar's Projects</title>;
                     } else if (router.pathname as string == "/papers") {
                         return <title>Cesar's Papers</title>;
                     } else if ((router.pathname as string).startsWith("/papers/[slug]")) {
@@ -34,7 +34,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 })()}
             </Head>
 
-            <div className="bg-black">
+            <div className="flex flex-col bg-black">
                 <div className="h-screen mx-auto max-w-7xl px-0">
                     <div className="mx-auto h-screen md:max-w-xl px-8 pt-24 md:px-12">
                         <NavigationBar />
