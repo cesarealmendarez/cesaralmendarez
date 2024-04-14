@@ -34,9 +34,9 @@ export default function App({ Component, pageProps }: AppProps) {
                 })()}
             </Head>
 
-            <div className="flex flex-col bg-black">
-                <div className="h-screen mx-auto max-w-7xl px-0">
-                    <div className="mx-auto h-screen md:max-w-xl px-8 pt-24 md:px-12">
+            <div className="min-h-screen flex flex-col bg-black">
+                <div className="min-h-screen flex grow mx-auto max-w-7xl px-0">
+                    <div className="mx-auto md:max-w-xl px-8 pt-24 md:px-12">
                         <NavigationBar />
                         <Component {...pageProps} />
                     </div>
