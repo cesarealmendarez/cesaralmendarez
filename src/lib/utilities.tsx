@@ -131,11 +131,23 @@ export const projects = [
     },
     {
         id: 3,
-        name: "This Website",
+        name: "This Site",
         description: "💻 🗂️ Cesar Almendarez Developer Portfolio",
         type: "Web Development",
         tech: ["Next.js", "Tailwind CSS", "Vercel"],
-        links: [],
+        links: [
+            {
+                id: 0,
+                url: "https://github.com/cesarealmendarez/cesaralmendarez",
+                icon: (
+                    <Github
+                        size={18}
+                        strokeWidth={1.5}
+                        className="text-white"
+                    />
+                ),
+            },
+        ],
     },
 ];
 
