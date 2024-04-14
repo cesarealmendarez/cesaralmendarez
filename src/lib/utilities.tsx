@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from "lucide-react";
+import { Banknote, ExternalLink, Github, SigmaSquare } from "lucide-react";
 
 export const navigationLinks = [
     {
@@ -42,12 +42,7 @@ export const socialLinks = [
         id: 2,
         name: "Email",
         url: "mailto:cesarealmendarez@gmail.com",
-    },
-    {
-        id: 3,
-        name: "LeetCode",
-        url: "https://leetcode.com/cesarealmendarez",
-    },
+    }
 ];
 
 export const projects = [
@@ -55,7 +50,7 @@ export const projects = [
         id: 0,
         name: "DoneDidIt",
         description:
-            "✅ 📱 iOS To-Do List App. Inspired by 'Microsoft To Do'. SwiftUI + Firebase",
+            "✅ 📱 iOS To-Do List App. Inspired by 'Microsoft To Do'. SwiftUI + Firebase.",
         type: "iOS Development",
         tech: ["Swift", "Xcode", "Firebase"],
         links: [
@@ -87,11 +82,11 @@ export const projects = [
         id: 1,
         name: "NewsNova",
         description:
-            "🚨 📰 Live news web app. Interfacing MediaStack API with Next.js, leveraging StepZen for GraphQL queries. Styling with TailwindCSS and HeadlessUI. Statically typed in TypeScript.",
+            "🚨 📰 Live news web app. Interfacing MediaStack API with Next.js, leveraging StepZen for GraphQL queries. Styling with Tailwind CSS and HeadlessUI. Statically typed in TypeScript.",
         url: "",
         image: "",
         type: "Web Development",
-        tech: ["Next.js", "TypeScript", "Tailwind"],
+        tech: ["Next.js", "TypeScript", "Tailwind CSS"],
         links: [
             {
                 id: 0,
@@ -142,33 +137,37 @@ export const projects = [
     },
 ];
 
-export const papers = [
+export const papers: Paper[] = [
     {
         id: 0,
-        title: "Understanding NFAs & DFAs",
-        subject: "automata-theory",
-        link: "https://google.com",
-        readTimeMin: "5",
+        title: "Creating NFAs to Accept Strings",
+        topic: "Automata Theory",
+        icon: <SigmaSquare className="text-neutral-400" size={15} />,
+        publishedTimestamp: "Monday February 5th",
+        author: "Cesar Almendarez",
+        link: "creating-nfas-to-accept-strings",
+        readTimeMinutes: "10",
+        content: <></>
+        // <div className="w-full flex flex-col items-start justify-start">
+        //     <p className="text-left text-sm font-light text-white">
+        //         Creating NFAs to Accept Strings Content
+        //     </p>
+        // </div>
     },
     {
         id: 1,
-        title: "Odio Tempor Orci Dapibus, Ultrices in Iaculis Nunc",
-        subject: "entrepreneurship",
-        link: "https://google.com",
-        readTimeMin: "10",
-    },
-    {
-        id: 2,
-        title: "Converting Between NFAs & DFAs",
-        subject: "automata-theory",
-        link: "https://google.com",
-        readTimeMin: "5",
-    },
-    {
-        id: 3,
-        title: "Congue Nisi Vitae Suscipit Tellus Mauris a Diam",
-        subject: "operating-systems",
-        link: "https://google.com",
-        readTimeMin: "15",
+        title: "Learning a Bit About Compounding Interest",
+        topic: "Finance",
+        icon: <Banknote className="text-neutral-400" size={15} />,
+        publishedTimestamp: "Wednesday February 7th",
+        author: "Cesar Almendarez",
+        link: "learning-a-bit-about-compounding-interest",
+        readTimeMinutes: "10",
+        content: <></>
+        // <div className="w-full flex flex-col items-start justify-start">
+        //     <p className="text-left text-sm font-light text-white">
+        //         Learning a Bit About Compounding Interest Content
+        //     </p>
+        // </div>
     },
 ];

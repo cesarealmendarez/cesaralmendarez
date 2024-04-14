@@ -1,13 +1,16 @@
 import Link from "next/link";
 
 import { papers } from "@/lib/utilities";
+import { Banknote, SigmaSquare } from "lucide-react";
+import { useRouter } from "next/router";
 
 export default function Papers() {
+    const router = useRouter();
+
     return (
         <div className="mt-6 flex w-full flex-col items-start justify-start space-y-6">
             <p className="text-left text-sm font-light text-white">
-                Tempor id eu nisl nunc mi ipsum faucibus vitae aliquet nec
-                ullamcorper sit amet risus nullam eget felis eget nunc
+                Learning and sharing about subjects I care about. Some stuff might make sense, others not so much.
             </p>
 
             <ul className="flex w-full flex-col items-start justify-start">
@@ -15,101 +18,70 @@ export default function Papers() {
                     key="automata-theory"
                     className="flex w-full flex-col items-start justify-start space-y-2 border-t-[0.5px] border-neutral-800 px-0 py-4"
                 >
-                    <p className="flex text-left text-sm font-light text-white">
-                        Automata Theory
-                    </p>
+                    <div className="w-full flex flex-row items-center justify-start space-x-2">
+                        <SigmaSquare className="text-white" size={15} />
+                        <p className="flex text-left text-sm font-light text-white">
+                            Automata Theory
+                        </p>
+                    </div>
 
                     <ul className="flex w-full flex-col items-start justify-start space-y-2">
-                        {papers
-                            .filter(
-                                (paper) => paper.subject == "automata-theory",
-                            )
-                            .map((paper, idx) => {
-                                return (
-                                    <li
-                                        key={idx}
-                                        className="flex flex-row items-center justify-start space-x-2"
-                                    >
-                                        <p className="text-left text-sm font-light text-neutral-400">
-                                            {paper.readTimeMin} min -
-                                        </p>
+                        {papers.filter((paper) => paper.topic == "Automata Theory").map((paper, idx) => {
+                            return (
+                                <li
+                                    key={idx}
+                                    className="flex flex-wrap space-x-2"
+                                // <div className="flex flex-wrap gap-x-4 gap-y-2 border-b-[0.5px] border-neutral-800 pb-4">
+                                >
 
-                                        <Link href={paper.link} target="_blank">
-                                            <p className="text-left text-sm font-light text-neutral-400 underline transition-colors duration-300 hover:text-neutral-300">
-                                                {paper.title}
-                                            </p>
-                                        </Link>
-                                    </li>
-                                );
-                            })}
+
+                                    {/* <a href={`/papers/${paper.link}`} className="flex flex-wrap space-x-2"> */}
+                                    <button onClick={() => { router.push(`/papers/${paper.link}`, undefined, { shallow: true }) }} className="flex space-x-2 text-wrap">
+                                        <span className="text-left text-sm font-light text-neutral-400">
+                                            {paper.readTimeMinutes} min -
+                                        </span>
+                                        <p className="text-left text-sm font-light text-white underline">
+                                            {paper.title}
+                                        </p>
+                                    </button>
+                                </li>
+                            );
+                        })}
                     </ul>
                 </li>
 
                 <li
-                    key="entrepreneurship"
+                    key="finance"
                     className="flex w-full flex-col items-start justify-start space-y-2 border-t-[0.5px] border-neutral-800 px-0 py-4"
                 >
-                    <p className="flex text-left text-sm font-light text-white">
-                        Entrepreneurship
-                    </p>
+                    <div className="w-full flex flex-row items-center justify-start space-x-2">
+                        <Banknote className="text-white" size={15} />
+                        <p className="flex text-left text-sm font-light text-white">
+                            Finance
+                        </p>
+                    </div>
 
                     <ul className="flex w-full flex-col items-start justify-start space-y-2">
-                        {papers
-                            .filter(
-                                (paper) => paper.subject == "entrepreneurship",
-                            )
-                            .map((paper, idx) => {
-                                return (
-                                    <li
-                                        key={idx}
-                                        className="flex flex-row items-center justify-start space-x-2"
-                                    >
-                                        <p className="text-left text-sm font-light text-neutral-400">
-                                            {paper.readTimeMin} min -
+                        {papers.filter((paper) => paper.topic == "Finance").map((paper, idx) => {
+                            return (
+                                <li
+                                    key={idx}
+                                    className="flex flex-wrap space-x-2"
+                                // <div className="flex flex-wrap gap-x-4 gap-y-2 border-b-[0.5px] border-neutral-800 pb-4">
+                                >
+
+
+                                    <button onClick={() => { router.push(`/papers/${paper.link}`, undefined, { shallow: true }) }} className="flex space-x-2  text-wrap">
+                                        <span className="text-left text-sm font-light text-neutral-400">
+                                            {paper.readTimeMinutes} min -
+                                        </span>
+                                        <p className="text-left text-sm font-light text-white underline">
+                                            {paper.title}
                                         </p>
-
-                                        <Link href={paper.link} target="_blank">
-                                            <p className="text-left text-sm font-light text-neutral-400 underline transition-colors duration-300 hover:text-neutral-300">
-                                                {paper.title}
-                                            </p>
-                                        </Link>
-                                    </li>
-                                );
-                            })}
-                    </ul>
-                </li>
-
-                <li
-                    key="operating-systems"
-                    className="flex w-full flex-col items-start justify-start space-y-2 border-t-[0.5px] border-neutral-800 px-0 py-4"
-                >
-                    <p className="flex text-left text-sm font-light text-white">
-                        Operating Systems
-                    </p>
-
-                    <ul className="flex w-full flex-col items-start justify-start space-y-2">
-                        {papers
-                            .filter(
-                                (paper) => paper.subject == "operating-systems",
-                            )
-                            .map((paper, idx) => {
-                                return (
-                                    <li
-                                        key={idx}
-                                        className="flex flex-row items-center justify-start space-x-2"
-                                    >
-                                        <p className="text-left text-sm font-light text-neutral-400">
-                                            {paper.readTimeMin} min -
-                                        </p>
-
-                                        <Link href={paper.link} target="_blank">
-                                            <p className="text-left text-sm font-light text-neutral-400 underline transition-colors duration-300 hover:text-neutral-300">
-                                                {paper.title}
-                                            </p>
-                                        </Link>
-                                    </li>
-                                );
-                            })}
+                                    </button>
+                                </li>
+                            );
+                        })}
                     </ul>
                 </li>
             </ul>

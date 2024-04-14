@@ -16,7 +16,7 @@ export default function Projects() {
                     return (
                         <li
                             key={idx}
-                            className="flex w-full flex-col items-start justify-start space-y-2 border-t-[0.5px] border-neutral-800 px-0 py-4"
+                            className="flex w-full flex-col items-start justify-start space-y-4 border-t-[0.5px] border-neutral-800 px-0 py-4"
                         >
                             <div className="flex w-full flex-row items-center justify-start">
                                 <Link

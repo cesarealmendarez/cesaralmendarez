@@ -2,9 +2,16 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 import { navigationLinks } from "@/lib/utilities";
+import { useEffect } from "react";
 
 export default function NavigationBar() {
     let router = useRouter();
+
+    useEffect(() => {
+        if (router.isReady) {
+            console.log(router.pathname as string == "/papers/[slug]")
+        }
+    }, [router])
 
     return (
         <div className="flex w-full flex-row items-center">
@@ -13,7 +20,7 @@ export default function NavigationBar() {
                     return (
                         <li key={idx}>
                             <Link href={link.url} target={link.target}>
-                                {router.pathname == link.url ? (
+                                {router.pathname == link.url || (link.url == "/papers" && (router.pathname as string).startsWith("/papers/[slug]")) ? (
                                     <p className="text-left text-sm font-light text-white transition-colors duration-300">
                                         {link.name}
                                     </p>

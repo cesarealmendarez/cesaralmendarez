@@ -14,7 +14,7 @@ export default function Index() {
             <ul className="flex flex-row flex-wrap items-center justify-start space-x-2">
                 {socialLinks.map((link, idx) => {
                     return (
-                        <li className="flex flex-row items-center justify-start space-x-2">
+                        <li key={idx} className="flex flex-row items-center justify-start space-x-2">
                             <Link href={link.url} target="_blank">
                                 <p className="text-left text-sm font-light text-white underline">
                                     {link.name}
