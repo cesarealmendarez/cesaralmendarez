@@ -34,16 +34,25 @@ export default function App({ Component, pageProps }: AppProps) {
                 })()}
             </Head>
 
-            <div className="min-h-screen flex flex-col bg-black">
-                <div className="min-h-screen flex grow mx-auto max-w-7xl px-0">
-                    <div className="mx-auto md:max-w-xl px-8 md:px-12 py-24">
+            <div className="min-h-screen">
+                <div className="min-h-screen max-w-lg mx-auto px-8 md:px-0 py-24">
+                    <NavigationBar />
+
+                    <Component {...pageProps} />
+                </div>
+
+                <Footer />
+            </div>
+            {/* <div className="min-h-screen flex flex-col bg-black">
+                <div className="min-h-screen flex grow mx-auto max-w-7xl">
+                    <div className="mx-auto md:max-w-xl px-8 py-24">
                         <NavigationBar />
                         <Component {...pageProps} />
                     </div>
                 </div>
 
                 <Footer />
-            </div>
+            </div> */}
         </>
     );
 }

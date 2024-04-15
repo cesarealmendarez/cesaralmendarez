@@ -16,7 +16,7 @@ export default function Papers() {
             <ul className="flex w-full flex-col items-start justify-start">
                 <li
                     key="automata-theory"
-                    className="flex w-full flex-col items-start justify-start space-y-2 border-t-[0.5px] border-neutral-800 px-0 py-4"
+                    className="flex w-full flex-col items-start justify-start space-y-4 border-t-[0.5px] border-neutral-800 px-0 py-4"
                 >
                     <div className="w-full flex flex-row items-center justify-start space-x-2">
                         <SigmaSquare className="text-white" size={15} />

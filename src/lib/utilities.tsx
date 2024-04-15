@@ -24,7 +24,7 @@ export const navigationLinks = [
         name: "Resume",
         url: "/Cesar-Almendarez-Resume-Fall-2023.pdf",
         target: "_blank",
-    },
+    }
 ];
 
 export const socialLinks = [
