@@ -17,14 +17,14 @@ export default function Footer() {
 
                     <div className="flex flex-row grow items-center justify-end">
                         <div className="flex flex-row items-center justify-end space-x-2">
-                            <p className="text-right text-xs text-white font-light">
-                                Los Angeles, CA
-                            </p>
                             <Globe
                                 size={12}
                                 strokeWidth={1.5}
                                 className="text-white"
                             />
+                            <p className="text-right text-xs text-white font-light">
+                                Los Angeles, CA
+                            </p>
                         </div>
                     </div>
                 </div>
