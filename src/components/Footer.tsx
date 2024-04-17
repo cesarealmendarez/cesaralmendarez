@@ -9,7 +9,6 @@ export default function Footer() {
                         <p className="text-left text-xs text-white font-light">
                             &copy;
                         </p>
-
                         <p className="text-left text-xs text-white font-light">
                             Cesar Almendarez
                         </p>

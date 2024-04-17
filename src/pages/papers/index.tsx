@@ -36,7 +36,8 @@ export default function Papers() {
 
 
                                     {/* <a href={`/papers/${paper.link}`} className="flex flex-wrap space-x-2"> */}
-                                    <button onClick={() => { router.push(`/papers/${paper.link}`, undefined, { shallow: true }) }} className="flex text-wrap">
+                                    {/* <button onClick={() => { router.push(`/papers/${paper.link}`, undefined, { shallow: true }) }} className="flex text-wrap"> */}
+                                    <button onClick={() => { }} className="flex text-wrap">
                                         <p className="text-left text-sm text-neutral-400 font-light">{paper.readTimeMinutes} min - <span className="text-white underline">{paper.title}</span></p>
                                     </button>
                                 </li>
@@ -74,7 +75,8 @@ export default function Papers() {
                                             {paper.title}
                                         </p>
                                     </button> */}
-                                    <button onClick={() => { router.push(`/papers/${paper.link}`, undefined, { shallow: true }) }} className="flex text-wrap">
+                                    {/* <button onClick={() => { router.push(`/papers/${paper.link}`, undefined, { shallow: true }) }} className="flex text-wrap"> */}
+                                    <button onClick={() => { }} className="flex text-wrap">
                                         <p className="text-left text-sm text-neutral-400 font-light">{paper.readTimeMinutes} min - <span className="text-white underline">{paper.title}</span></p>
                                     </button>
                                 </li>

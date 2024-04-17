@@ -22,7 +22,7 @@ export const navigationLinks = [
     {
         id: 3,
         name: "Resume",
-        url: "/Cesar-Almendarez-Resume-Fall-2023.pdf",
+        url: "/Cesar-Almendarez-Resume-Spring-2024.pdf",
         target: "_blank",
     }
 ];
