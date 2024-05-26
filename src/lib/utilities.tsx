@@ -22,7 +22,7 @@ export const navigationLinks = [
     {
         id: 3,
         name: "Resume",
-        url: "/Cesar-Almendarez-Resume-Spring-2024.pdf",
+        url: "/resume.pdf",
         target: "_blank",
     }
 ];
@@ -154,19 +154,14 @@ export const projects = [
 export const papers: Paper[] = [
     {
         id: 0,
-        title: "Creating NFAs to Accept Strings",
+        title: "NFA Construction Examples",
         topic: "Automata Theory",
         icon: <SigmaSquare className="text-neutral-400" size={15} />,
         publishedTimestamp: "Monday February 5th",
         author: "Cesar Almendarez",
-        link: "creating-nfas-to-accept-strings",
+        link: "nfa-construction-examples",
         readTimeMinutes: "10",
         content: <></>
-        // <div className="w-full flex flex-col items-start justify-start">
-        //     <p className="text-left text-sm font-light text-white">
-        //         Creating NFAs to Accept Strings Content
-        //     </p>
-        // </div>
     },
     {
         id: 1,
@@ -178,10 +173,5 @@ export const papers: Paper[] = [
         link: "learning-a-bit-about-compounding-interest",
         readTimeMinutes: "10",
         content: <></>
-        // <div className="w-full flex flex-col items-start justify-start">
-        //     <p className="text-left text-sm font-light text-white">
-        //         Learning a Bit About Compounding Interest Content
-        //     </p>
-        // </div>
     },
 ];

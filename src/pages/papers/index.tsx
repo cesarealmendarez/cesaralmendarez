@@ -13,8 +13,8 @@ export default function Papers() {
                 Learning and sharing about subjects I care about. Some stuff might make sense, others not so much.
             </p>
 
-            <ul className="flex w-full flex-col items-start justify-start">
-                <li
+            <ul className="flex w-full flex-col items-start justify-start border-t-[0.5px] border-neutral-800">
+                {/* <li
                     key="automata-theory"
                     className="flex w-full flex-col items-start justify-start space-y-4 border-t-[0.5px] border-neutral-800 px-0 py-4"
                 >
@@ -31,13 +31,9 @@ export default function Papers() {
                                 <li
                                     key={idx}
                                     className="flex flex-wrap space-x-2"
-                                // <div className="flex flex-wrap gap-x-4 gap-y-2 border-b-[0.5px] border-neutral-800 pb-4">
                                 >
 
-
-                                    {/* <a href={`/papers/${paper.link}`} className="flex flex-wrap space-x-2"> */}
-                                    {/* <button onClick={() => { router.push(`/papers/${paper.link}`, undefined, { shallow: true }) }} className="flex text-wrap"> */}
-                                    <button onClick={() => { }} className="flex text-wrap">
+                                    <button onClick={() => { router.push(`/papers/${paper.link}`, undefined, { shallow: true }) }} className="flex text-wrap">
                                         <p className="text-left text-sm text-neutral-400 font-light">{paper.readTimeMinutes} min - <span className="text-white underline">{paper.title}</span></p>
                                     </button>
                                 </li>
@@ -63,19 +59,8 @@ export default function Papers() {
                                 <li
                                     key={idx}
                                     className="flex flex-wrap space-x-2"
-                                // <div className="flex flex-wrap gap-x-4 gap-y-2 border-b-[0.5px] border-neutral-800 pb-4">
                                 >
 
-
-                                    {/* <button onClick={() => { router.push(`/papers/${paper.link}`, undefined, { shallow: true }) }} className="flex space-x-2  text-wrap">
-                                        <span className="text-left text-sm font-light text-neutral-400">
-                                            {paper.readTimeMinutes} min -
-                                        </span>
-                                        <p className="text-left text-sm font-light text-white underline">
-                                            {paper.title}
-                                        </p>
-                                    </button> */}
-                                    {/* <button onClick={() => { router.push(`/papers/${paper.link}`, undefined, { shallow: true }) }} className="flex text-wrap"> */}
                                     <button onClick={() => { }} className="flex text-wrap">
                                         <p className="text-left text-sm text-neutral-400 font-light">{paper.readTimeMinutes} min - <span className="text-white underline">{paper.title}</span></p>
                                     </button>
@@ -83,7 +68,7 @@ export default function Papers() {
                             );
                         })}
                     </ul>
-                </li>
+                </li> */}
             </ul>
         </div>
     );
